@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import PageTitle from "../src/components/patterns/Head";
 
 // SSG - Static Site Generation (site estático, que não carrega nada, somente conteúdo pronto)
 // SSR - Server Side Rendering (site gerado no servidor e enviado pronto (ou quase) para o cliente)
@@ -30,9 +31,7 @@ export default function FAQPage({ faq }) {
 
     return (
         <div>
-            <Head>
-                <title>FAQ - Alura Cases Campanha</title>
-            </Head>
+            <PageTitle>FAQ - Alura Cases Campanha</PageTitle>
             <h1>Alura Cases - FAQ</h1>
             <Link href="/">Ir para Home</Link>
             <ul>
